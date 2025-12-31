@@ -1,6 +1,12 @@
 html {
   font-size: 16px;
 }
+/* @media screen and (min-width: 400px) and (max-width: 500px){ 
+  body {
+    background-color: lightblue
+  }
+    this command means that if the web page width is less than 400px or greater than 500px then the background color will be white otherwise it will be blue
+}*/
 
 body {
   margin: 0;
