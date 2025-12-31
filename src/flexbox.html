@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Flexbox Practice</title>
+       <style>
+       #container {
+           border: 1px solid black;
+           background-color: coral;
+           font-family: Sans-Serif;
+           padding: 10px;
+           height: 250px;
+           display: flex;
+           /*flex command is used to make in single line extra*/
+           /*flex-direction: row-reverse;*/
+           /*row-reverse command is used to reverse the numbering and start from right/last in reverse order*/
+           /*flex-direction: column;*/
+           /*column command is used to arrange top to bottom in serial order*/
+           /*flex-direction: column-reverse;*/
+           flex-direction: row;
+           /*flex-wrap: wrap;*/
+           /*wrap command is used to take the element into next line when it touchs the parent border*/
+           /*flex-wrap: wrap-reverse;*/
+           justify-content: center;
+           /*justify-content: flex-start;*/
+           /*justify-content: flex-end;*/
+           /*justify-content: space-around;*/
+           /*justify-content: space-between;*/
+           /*justify-content: space-evenly;*/
+           /*align-items: stretch;*/
+           /*align-items: flex-start;*/
+           /*align-items: flex-end;*/
+           align-items: center;
+           /*align-items: baseline;*/
+           /*by combining flex-direction command and other given command above we can align item in any order*/
+           /*align-content: flex-start;*/
+           /*align-content: center;*/
+           /*align-content: flex-end;*/
+           /*align-content: space-around,between,evenly;*/
+       }
+        .item {
+            border: 1px solid black;
+            padding: 10px 30px;
+            background-color: blue;
+        }
+        #item1 {
+            align-self: flex-start;
+            flex-basis: 0;
+        }
+        #item2 {
+            flex-basis: 0;
+            flex-grow: 1;
+        }
+        #item3 {
+            align-self: flex-end;
+            flex-grow: 8;
+            flex-basis: 0;
+        }
+        #item4 {
+            flex-shrink: 1;
+            flex-basis: 0;
+        }
+       </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="item1" class="item">Item1</div>
+            <div id="item2" class="item">Item2</div>
+            <div id="item3" class="item">Item3</div>
+            <div id="item4" class="item">Item4</div>
+            <!--<div id="item5" class="item">item5</div>-->
+            <!--<div id="item6" class="item">Item6</div>-->
+            <!--<div id="item7" class="item">item7</div>-->
+            <!--<div id="item8" class="item">Item8</div>-->
+        </div>
+    </body>
+</html>
