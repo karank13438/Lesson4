@@ -1,4 +1,4 @@
-/* Below Commands are common in all version */
+/* Base style (extra small devices like mobile ) */
 html {
   font-size: 14px;
 }
@@ -29,7 +29,94 @@ a {
 a:hover, a:focus {
   color: #1D4ED8;
 }
-@media screen and (min-width: 576px)
+#navbar {
+  padding: 8px;
+  margin: 0;
+}
+#mobile-version-logo {
+  display: block;
+}
+#logo {
+  display:none;
+}
+#desktop-version-logo {
+  display: none
+}
+#banner {
+  object-fit: cover;
+  height: 130px;
+  width: 100%;
+}
+h1 {
+    text-align: center;
+    margin: 8px 0;
+}
+#about {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 8px;
+}
+#description {
+  font-size: 1.25rem;
+}
+#team-image {
+  border-radius: 5px;
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+html {
+  font-size: 16px;
+}
+#mobile-version-logo {
+  display: none;
+}
+#logo {
+  display:block;
+}
+#desktop-version-logo {
+  display: none
+}
+#banner {
+  height: 200px;
+}
+h1 {
+margin: 13px 0;
+}
+#about {
+  max-width: 680px;
+}
+}
+/* laptop version*/
+@media screen and (min-width: 768px) {
+html {
+  font-size: 20px;
+}
+#desktop-version-logo {
+  display: block;
+}
+#mobile-version-logo {
+  display: none;
+}
+#logo {
+  display:none;
+}
+#banner {
+  height: 280px;
+}
+h1 {
+margin: 16px 0;
+}
+#about {
+  max-width: 800px;
+  flex-direction: row;
+}
+#description {
+  width: 50%;
+  padding-right: 8px;
+}
+}
 /*
 html {
   font-size: 16px;
@@ -84,15 +171,11 @@ a:hover, a:focus {
 
 #banner {
   object-fit: cover;
+  width: 100%;
 }
-
 
 h1 {
     text-align: center;
-}
-
-#banner {
-   width: 100%; 
 }
 
 #about {
