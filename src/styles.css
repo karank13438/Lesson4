@@ -65,6 +65,128 @@ h1 {
   border-radius: 5px;
   width: 100%;
 }
+#team {
+  width: 100%;           
+}
+#jobs-table {
+  display: none;
+}
+h2 {
+   text-align: center;
+}
+#jobs-list {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 8px;
+  display: block;
+}
+.jobs-header-row th {
+  border: 1px solid gray;
+  padding: 8px;
+  background-color: #BFDBFE;
+  text-align: center;
+  color: #222222;
+}
+
+.jobs-data-row td {
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+#jobs-table tr:nth-child(odd) {
+  background-color: #EFF6FF;
+}
+.jovian-job {
+  border: 4px solid #dddddd;
+  margin-top: 4px;
+  border-radius: 8px;
+  padding: 8px;
+}
+.job-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #222222;
+}
+.job-details {
+  margin-top: 4px;
+  color: #555555;
+}
+#application {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 8px;
+  
+}
+
+
+.form-group {
+  margin: 16px 0;
+}
+.form-group label {
+  font-weight: 600;
+}
+
+.form-group input, select, textarea {
+  padding: 8px;
+  width: 90%;
+  font-size: 1.25rem;
+  margin-top: 4px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.form-group textarea {
+  /* width: 80%; */
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-group input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+.form-group input[type="submit"] {
+  background-color: #3B82F6;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+h3 {
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+
+.apply {
+  float: right;
+}
+
+#footer {
+  background-color: #FAFAFA;
+  padding: 8px;
+  margin-top: 32px;
+  text-align: center;
+}
+
+#footer-links {
+  list-style: none;  
+  padding-left: 0;
+}
+
+#footer-links li {
+  /* display: inline; */
+  margin: 5px 16px;
+}
+
+.copyright {
+  color: #71717A;
+  font-size: 0.875rem;
+}
+
+
+
+/* tablet Screen */
 @media screen and (min-width: 576px) {
 html {
   font-size: 16px;
@@ -87,9 +209,25 @@ margin: 13px 0;
 #about {
   max-width: 680px;
 }
+#jobs-list {
+  max-width: 680px;
 }
+#application {
+  max-width: 680px;
+}
+.form-group input, select {
+  width:auto;
+}
+#footer-links li {
+  display: inline;
+  margin: 0 16px;
+}
+}
+
+
+
 /* laptop version*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
 html {
   font-size: 20px;
 }
@@ -109,14 +247,41 @@ h1 {
 margin: 16px 0;
 }
 #about {
-  max-width: 800px;
+  max-width: 1200px;
   flex-direction: row;
 }
 #description {
   width: 50%;
   padding-right: 8px;
 }
+#team {
+  width: 50%;
 }
+#jobs {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px
+}
+#jobs-table {
+  display: table;
+  width: 100%;
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+#jobs-list {
+  display: none;
+}
+#application {
+  max-width: 1200px;
+}
+h3 {
+text-align: center;
+margin: 55px;
+}
+}
+
 /*
 html {
   font-size: 16px;
@@ -145,7 +310,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: #222222;
 
-}
+  }
 
 h1 { font-size: 2.5rem; }
 h2 { font-size: 2rem; }
@@ -243,15 +408,15 @@ h2 {
   font-weight: 600;
 }
 
-#application-form input, select, textarea {
+/*#application-form input, select, textarea {
   padding: 8px;
   font-size: 1.25rem;
   margin-top: 4px;
   border-radius: 5px;
   border: 1px solid gray;
-}
+}*/
 
-.form-group textarea {
+/*.form-group textarea {
   width: 80%;
   font-family: 'Roboto', sans-serif;
 }
@@ -302,5 +467,4 @@ h3 {
 .copyright {
   color: #71717A;
   font-size: 0.875rem;
-}
-*/
+}*/
